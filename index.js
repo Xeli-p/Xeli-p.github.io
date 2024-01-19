@@ -97,6 +97,7 @@ function animate() {
     } else {
         color = '#000';
     }
+    
 
     syncP = (numGreenLines/lines.length)*100;
     timeAfter = performance.now()
@@ -131,7 +132,7 @@ function animate() {
 
     for (let i = 0; i < size; i++) {
         let line = lines[i];
-        line.y += 1.5;
+        line.y += 3;
 
         if (i > 0) {
             let prevLine = lines[i - 1];
@@ -141,6 +142,8 @@ function animate() {
             ctx.lineCap = 'round';
             ctx.strokeStyle = line.color;
             ctx.stroke();
+            let delta = line.x - prevLine.x
+          //  prevLine.rotate((i * delta * Math.PI * 0.1) / 180);
         }
     }
 
