@@ -116,7 +116,7 @@ function animate() {
     //
     // new line
     let newLine = {
-        x: canvas.width/1.6 - mouse.x/4,
+        x: canvas.width/2.5 + mouse.x/4,
         y: canvas.height/8,
         color: color
     };
