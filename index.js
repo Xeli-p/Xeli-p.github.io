@@ -79,7 +79,7 @@ function animate(currentTime) {
 }
 
 function updateLogic() {
-    let color = '#333';
+    let color = '#000';
     if (((isKeyDownA && isLeft) || (isKeyDownD && isRight)) && !(isKeyDownA && isKeyDownD)) {
         color = '#0f0';
     }
